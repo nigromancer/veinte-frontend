@@ -1,11 +1,11 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import { Container, Button } from '@material-ui/core';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
+    <Container>
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
@@ -18,8 +18,10 @@ function App() {
         >
           Learn React
         </a>
-      </header>
-    </div>
+        <Button variant="contained" color="primary">
+          Hola Mundo!
+        </Button>
+    </Container>
   );
 }
 
