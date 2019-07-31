@@ -6,7 +6,7 @@ ENV NODE_ENV production
 RUN npm install
 RUN npm run build
 
-# Deploy en nginx
+# Deploy en nginx:alpine
 FROM nginx:alpine
 COPY --from=react-build /app/build /usr/share/nginx/html
 EXPOSE 80
